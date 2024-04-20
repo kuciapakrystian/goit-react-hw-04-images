@@ -11,7 +11,7 @@ export class Searchbar extends Component {
   state = {
     textQuery: '',
   };
-  // стежимо за змінами Input (контрольований елемент)
+  
   onChangeInput = e => {
     this.setState({ textQuery: e.currentTarget.value.trim().toLowerCase() });
   };
@@ -20,14 +20,14 @@ export class Searchbar extends Component {
     e.preventDefault();
     const { textQuery } = this.state;
     const { onSubmit } = this.props;
-    // повідомлення
+    
     if (textQuery === '') {
       toast.error(`${notificationMassege}`, notificationOptions);
     }
-    //фун-я onSubmit прийшла з App через пропси
+    
     onSubmit(textQuery);
 
-    //очистка рядка пошука
+    
     this.setState({ textQuery: '' });
   };
 

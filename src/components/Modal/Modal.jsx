@@ -6,7 +6,7 @@ const modalRoot = document.querySelector('#modal-root');
 
 export const Modal = ({ onClose, children }) => {
   useEffect(() => {
-    // перевірка клавіші Escape
+    
     const handleClickEsc = e => {
       if (e.code === 'Escape') {
         onClose();
@@ -17,7 +17,7 @@ export const Modal = ({ onClose, children }) => {
     return () => window.removeEventListener('keydown', handleClickEsc);
   }, [onClose]);
 
-  // перевірка чи клік був на бекдроп
+  
   const handleClickBackdrop = e => {
     if (e.currentTarget === e.target) {
       onClose();

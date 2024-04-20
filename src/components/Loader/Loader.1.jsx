@@ -1,9 +1,9 @@
-import { Dna } from 'react-loader-spinner';
+import { DNA } from 'react-loader-spinner';
 
 
 export const Loader = ({ isLoading }) => {
   return (
-    <Dna
+    <DNA
       visible={isLoading}
       height="80"
       width="80"

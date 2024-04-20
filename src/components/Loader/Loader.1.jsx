@@ -1,5 +1,6 @@
 import { Dna } from 'react-loader-spinner';
 
+
 export const Loader = ({ isLoading }) => {
   return (
     <Dna
@@ -12,7 +13,6 @@ export const Loader = ({ isLoading }) => {
         marginTop: '5px',
         marginLeft: 'auto',
         marginRight: 'auto',
-      }}
-    />
+      }} />
   );
 };

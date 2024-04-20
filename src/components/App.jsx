@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Searchbar } from './Searchbar/Searchbar';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from 'components/Button/Button';
-import { Loader } from 'components/Loader/Loader';
+import { Loader } from './Loader/Loader.1';
 import { Modal } from 'components/Modal/Modal';
 import { ImageErrorView } from './ImageErrorView/ImageErrorView';
 import { imgApi } from 'service/imgApi';
